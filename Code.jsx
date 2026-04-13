@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const GOOGLE_CLIENT_ID = "TU_CLIENT_ID_AQUI.apps.googleusercontent.com";
 const GOOGLE_FIT_SCOPES = [
   "https://www.googleapis.com/auth/fitness.activity.read",
+  "https://www.googleapis.com/auth/fitness.activity.write", // 👈 Necesario para guardar
   "https://www.googleapis.com/auth/fitness.heart_rate.read",
   "https://www.googleapis.com/auth/fitness.body.read",
 ].join(" ");
